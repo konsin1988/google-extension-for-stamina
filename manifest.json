@@ -12,11 +12,15 @@
   "content_scripts": [
     {
       "js": ["js/content.js"],
-      "matches": ["https://stamina-online.com/**"]
+      "matches": ["https://stamina-online.com/*"]
     }
   ],
   "action": {
     "default_popup": "html/popup.html"
   },
-  "permissions": ["scripting", "activeTab"]
+  "permissions": ["storage", "scripting", "tabs", "activeTab"],
+  "host_permissions": ["https://stamina-online.com/*"],
+  "background": {
+    "service_worker": "js/background.js"
+  }
 }

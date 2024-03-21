@@ -1,3 +1,5 @@
+/**************************** POPUP BUTTON ******************* */
+
 const css = "body { background: linear-gradient(90deg, #354e69, #000000); }";
 
 const grabBtn = document.getElementById("grabBtn");
